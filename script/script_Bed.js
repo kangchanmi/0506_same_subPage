@@ -33,6 +33,25 @@ $(function () {
     /* 맨 위로 이동 버튼 */
 
 
+    /* 푸터 슬라이드 */
+    setInterval(footSlide, 5000)
+
+    function footSlide() {
+
+        $("#footShuttleFrame").animate({
+                "margin-left": "-178.5px"
+            },
+            1500,
+            "swing",
+            function () {
+                $("#footShuttleFrame a:first-child").insertAfter("#footShuttleFrame a:last-child");
+                $("#footShuttleFrame").css({
+                    "margin-left": "0"
+                });
+            });
+    };
+    /* 푸터 슬라이드 */
+
 
     /* 모달레이어 */
     /* 닫기 */
@@ -74,97 +93,98 @@ $(function () {
     /* 바로 구매 */
 
 
+
     /* 1 */
-    $(".Kit_Img:first-child").click(function () {
-        $("#kitModal1").css({
+    $(".bed_Img:first-child").click(function () {
+        $("#bedModal1").css({
             "display": "block"
         });
     });
     /* 1 */
 
     /* 2 */
-    $(".Kit_Img:nth-child(2)").click(function () {
-        $("#kitModal2").css({
+    $(".bed_Img:nth-child(2)").click(function () {
+        $("#bedModal2").css({
             "display": "block"
         });
     });
     /* 2 */
 
     /* 3 */
-    $(".Kit_Img:nth-child(3)").click(function () {
-        $("#kitModal3").css({
+    $(".bed_Img:nth-child(3)").click(function () {
+        $("#bedModal3").css({
             "display": "block"
         });
     });
     /* 3 */
 
     /* 4 */
-    $(".Kit_Img:last-child").click(function () {
-        $("#kitModal4").css({
+    $(".bed_Img:nth-child(4)").click(function () {
+        $("#bedModal4").css({
             "display": "block"
         });
     });
     /* 4 */
 
     /* 5 */
-    $("#2th_content .Kit_Img:first-child").click(function () {
-        $("#kitModal5").css({
+    $("#2th_content .bed_Img:first-child").click(function () {
+        $("#bedModal5").css({
             "display": "block"
         });
     });
     /* 5 */
 
     /* 6 */
-    $("#2th_content .Kit_Img:nth-child(2)").click(function () {
-        $("#kitModal6").css({
+    $("#2th_content .bed_Img:nth-child(2)").click(function () {
+        $("#bedModal6").css({
             "display": "block"
         });
     });
     /* 6 */
 
     /* 7 */
-    $("#2th_content .Kit_Img:nth-child(3)").click(function () {
-        $("#kitModal7").css({
+    $("#2th_content .bed_Img:nth-child(3)").click(function () {
+        $("#bedModal7").css({
             "display": "block"
         });
     });
     /* 7 */
 
     /* 8 */
-    $("#2th_content .Kit_Img:last-child").click(function () {
-        $("#kitModal8").css({
+    $("#2th_content .bed_Img:last-child").click(function () {
+        $("#bedModal8").css({
             "display": "block"
         });
     });
     /* 8 */
 
     /* 9 */
-    $("#3rd_content .Kit_Img:first-child").click(function () {
-        $("#kitModal9").css({
+    $("#3rd_content .bed_Img:first-child").click(function () {
+        $("#bedModal9").css({
             "display": "block"
         });
     });
     /* 9 */
 
     /* 10 */
-    $("#3rd_content .Kit_Img:nth-child(2)").click(function () {
-        $("#kitModal10").css({
+    $("#3rd_content .bed_Img:nth-child(2)").click(function () {
+        $("#bedModal10").css({
             "display": "block"
         });
     });
     /* 10 */
 
     /* 11 */
-    $("#3rd_content .Kit_Img:nth-child(3)").click(function () {
-        $("#kitModal11").css({
+    $("#3rd_content .bed_Img:nth-child(3)").click(function () {
+        $("#bedModal11").css({
             "display": "block"
         });
     });
     /* 11 */
 
     /* 12 */
-    $("#3rd_content .Kit_Img:last-child").click(function () {
-        $("#kitModal12").css({
+    $("#3rd_content .bed_Img:last-child").click(function () {
+        $("#bedModal12").css({
             "display": "block"
         });
     });
@@ -194,34 +214,11 @@ $(function () {
     /* 모달레이어 */
 
 
-    /* 푸터 슬라이드 */
-    setInterval(footSlide, 5000)
-
-    function footSlide() {
-
-        $("#footShuttleFrame").animate({
-                "margin-left": "-178.5px"
-            },
-            1500,
-            "swing",
-            function () {
-                $("#footShuttleFrame a:first-child").insertAfter("#footShuttleFrame a:last-child");
-                $("#footShuttleFrame").css({
-                    "margin-left": "0"
-                });
-            });
-    };
-    /* 푸터 슬라이드 */
-
-
-
     /* 고객센터 메뉴 안내 메세지 */
     $("#gnb .custom").click(function () {
         alert("준비 중입니다");
     });
     /* 고객센터 메뉴 안내 메세지 */
-
-
 
 
 
